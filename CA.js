@@ -583,7 +583,7 @@ function updateLegend(){
     function zoomed (){
         tooltip.style("left", (event.clientX + 10) + "px") //position tooltip at mouse position
                 .style("top", (event.clientY) + "px");
-        Minimap.selectAll("path")
+        Minisvg.selectAll("path")
             .attr("transform", d3.event.transform); 
     }
 }
