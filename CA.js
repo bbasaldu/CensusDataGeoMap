@@ -578,7 +578,7 @@ function updateLegend(){
   .select(".domain")
     .remove();
  };  
-    Minimap.call(zoom);
+    MiniSvg.call(zoom);
     //svg.call(zoom) //zoom/drag functionality but it gets laggy.
     function zoomed (){
         tooltip.style("left", (event.clientX + 10) + "px") //position tooltip at mouse position
