@@ -433,7 +433,7 @@ function ready(Data) {
         });
         mapBool = true;
         updateLegend();
-        outlineCounty(GlobalFIPS);
+        if(GlobalFIPS != "") outlineCounty(GlobalFIPS);
         
         }
     });
@@ -465,7 +465,7 @@ function ready(Data) {
         });
         mapBool = false;
         updateLegend();
-        outlineCounty(GlobalFIPS);
+        if(GlobalFIPS != "") outlineCounty(GlobalFIPS);
         }
     });
     
