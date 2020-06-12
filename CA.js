@@ -332,7 +332,7 @@ function ready(Data) {
             prev.attr("stroke", "#000");
             prev.attr("stroke-opacity", 0.5);
             prev.attr("stroke-width", 0.5);
-            Minimap.call(zoom.transform, d3.zoomIdentity);
+            MiniSvg.call(zoom.transform, d3.zoomIdentity);
         }
         Minimap.selectAll("path").remove().exit();
     }
@@ -583,7 +583,7 @@ function updateLegend(){
     function zoomed (){
         tooltip.style("left", (event.clientX + 10) + "px") //position tooltip at mouse position
                 .style("top", (event.clientY) + "px");
-        Minisvg.selectAll("path")
+        Minimap.selectAll("path")
             .attr("transform", d3.event.transform); 
     }
 }
