@@ -45,3 +45,16 @@ div.tooltip {
     width: 33.33%;
     text-align: right;
 }
+
+.mainSvg {
+    position: relative;
+    
+    
+    
+}
+
+.miniSvg {
+    position: relative;
+    left: 510px;
+    top: -890px;
+}

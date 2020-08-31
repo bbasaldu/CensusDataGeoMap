@@ -7,13 +7,17 @@ var indexRed = 10; //2018 data for first dataset
 var svg = d3.select("body")
     .append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .attr("class", "mainSvg");
 //svg space for mini map
 var MiniSvg = d3.select("body")
     .append("svg")
     .attr("width", 400)
     .attr("height", 320)
-    .attr("transform", "translate(-520,-570)");
+    .attr("class", "miniSvg");
+    //.style("background-color", "blue");
+    //.attr("class", ".miniSvg");
+    //.attr("transform", "translate(-520,-570)");
 
 var color = d3.scaleThreshold()
             .domain([500, 1000, 1500, 2000, 2500, 3000, 3500, 4000])
