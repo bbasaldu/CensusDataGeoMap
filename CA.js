@@ -10,14 +10,11 @@ var svg = d3.select("body")
     .attr("height", height)
     .attr("class", "mainSvg");
 //svg space for mini map
-var MiniSvg = d3.select("body")
+var MiniSvg = svg.append("g")//d3.select("body")
+    .attr("transform","translate(510, 75)")
     .append("svg")
     .attr("width", 400)
-    .attr("height", 320)
-    .attr("class", "miniSvg");
-    //.style("background-color", "blue");
-    //.attr("class", ".miniSvg");
-    //.attr("transform", "translate(-520,-570)");
+    .attr("height", 320);
 
 var color = d3.scaleThreshold()
             .domain([500, 1000, 1500, 2000, 2500, 3000, 3500, 4000])
